@@ -1,9 +1,15 @@
 import React from "react";
 
 const SearchBar = () => {
+  const onFormSubmit = (e) => {
+    e.preventDefault();
+
+    console.log(`cordaeeeeee`);
+  };
+
   return (
     <div className="ui segment">
-      <form className="ui form">
+      <form onSubmit={onFormSubmit} className="ui form">
         <div className="field">
           <label>Video Search</label>
           <input placeholder={`try "charlie bit my finger" `} />
