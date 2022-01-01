@@ -1,5 +1,10 @@
 import React from "react";
+import SearchBar from "./components/SearchBar";
 
-const App = () => <h1>Youtube Clone</h1>;
+const App = () => (
+  <div className="ui container">
+    <SearchBar />
+  </div>
+);
 
 export default App;
